@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<HBox fx:id="scoreBoard" alignment="CENTER" maxHeight="50.0" prefHeight="50.0" spacing="35.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs2410.assn8.controllers.ScoreBoardController">
+   <children>
+      <VBox alignment="CENTER" maxHeight="50.0" minWidth="-Infinity" prefWidth="160.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bombs Remaining" />
+            <Text fx:id="bombsLeft" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+         </children>
+      </VBox>
+      <Button fx:id="startBtn" mnemonicParsing="false" onAction="#newGameAction" text="New Game" />
+      <VBox alignment="CENTER" maxHeight="50.0" minWidth="-Infinity" prefWidth="160.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Time:" />
+            <Text fx:id="time" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</HBox>

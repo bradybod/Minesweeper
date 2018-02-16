@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioMenuItem?>
+
+<MenuBar fx:id="menuBar" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs2410.assn8.controllers.MenuBarController">
+   <menus>
+      <Menu mnemonicParsing="false" text="Game Settings">
+        <items>
+            <Menu mnemonicParsing="false" text="Size">
+               <items>
+                  <RadioMenuItem fx:id="smallSize" mnemonicParsing="false" text="Small" />
+                  <RadioMenuItem fx:id="mediumSize" mnemonicParsing="false" text="Medium" />
+                  <RadioMenuItem fx:id="largeSize" mnemonicParsing="false" text="Large" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Difficulty">
+               <items>
+                  <RadioMenuItem fx:id="dificultyEasy" mnemonicParsing="false" text="Easy" />
+                  <RadioMenuItem fx:id="dificultyMedium" mnemonicParsing="false" text="Medium" />
+                  <RadioMenuItem fx:id="dificultyHard" mnemonicParsing="false" text="Hard" />
+               </items>
+            </Menu>
+            <RadioMenuItem fx:id="sound" mnemonicParsing="false" onAction="#soundHeard" text="Sound" />
+        </items>
+      </Menu>
+      <Menu mnemonicParsing="false" text="ScoreBoard">
+        <items>
+          <MenuItem fx:id="viewScoreBoard" mnemonicParsing="false" onAction="#scoreBoardPane" text="View" />
+        </items>
+      </Menu>
+   </menus>
+</MenuBar>
